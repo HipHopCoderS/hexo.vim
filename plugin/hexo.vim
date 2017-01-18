@@ -77,5 +77,4 @@ command -nargs=+ HexoClean :call Hexo_Clean()
 command -nargs=+ HexoGenerate :call Hexo_Generate()
 command -nargs=+ HexoPublish :call Hexo_Generate("<args>")
 command -nargs=+ HexoDeploy  :call Hexo_Deploy("<args>")
-command -nargs=+ HexoServer  :call Hexo_Server
-("<args>")
+command -nargs=+ HexoServer  :call Hexo_Server()

@@ -86,9 +86,8 @@ endfunction
 
 command -nargs=+ HexoNewPost :call Hexo_New_Post("<args>")
 command -nargs=+ HexoNewDraft :call Hexo_New_Draft("<args>")
+command -nargs=+ HexoPublish :call Hexo_Publish("<args>")
 command HexoClean :call Hexo_Clean()
 command HexoGenerate :call Hexo_Generate()
-command -nargs=+ HexoPublish :call Hexo_Publish("<args>")
-command HexoGenerate :call HexoGenerate()
 command HexoDeploy  :call Hexo_Deploy()
 command HexoServer  :call Hexo_Server()

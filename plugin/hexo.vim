@@ -39,7 +39,7 @@ endfunction
 function! Hexo_New_Draft(...)
     call OpenHexoProject()
     let filename = a:1
-    execute "!hexo new  draft" . filename
+    execute "!hexo new draft " . filename
     call  OpenHexoDraft(a:1)
 endfunction
 

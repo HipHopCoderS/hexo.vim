@@ -19,14 +19,14 @@ endfunction
 
 
 " Edit new publish 
-function! OpenHexoDraft(...)
+function! OpenHexoPlulish(...)
     call OpenHexoProject ()
     let filename = "source/_drafts/" . a:1 . ".md"
     execute "e " . filename
 endfunction
 
 
-" HexoNewPost
+" HexoNew
 function! Hexo_New_Post(...)
     call OpenHexoProject()
     let filename = a:1
@@ -35,12 +35,12 @@ function! Hexo_New_Post(...)
 endfunction
 
 
-" HexoNewDraft
-function! Hexo_New_Draft(...)
+" HexoNew
+function! Hexo_New_Post(...)
     call OpenHexoProject()
     let filename = a:1
-    execute "!hexo new  draft" . filename
-    call  OpenHexoDraft(a:1)
+    execute "!hexo new " . filename
+    call OpenHexoPost(a:1)
 endfunction
 
 
@@ -85,10 +85,9 @@ endfunction
 
 
 command -nargs=+ HexoNewPost :call Hexo_New_Post("<args>")
-command -nargs=+ HexoNewDraft :call Hexo_New_Draft("<args>")
 command HexoClean :call Hexo_Clean()
 command HexoGenerate :call Hexo_Generate()
-command -nargs=+ HexoPublish :call Hexo_Publish("<args>")
+command -nargs=+ HexoPublish :call 
 command HexoGenerate :call HexoGenerate()
 command HexoDeploy  :call Hexo_Deploy()
 command HexoServer  :call Hexo_Server()

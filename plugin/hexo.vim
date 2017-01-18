@@ -60,7 +60,7 @@ function! Hexo_Deploy()
     call Hexo_Generate
     execute "!hexo d" . filename
     call OpenHexoPost(a:1)
-
+endfunction
 
 " HexoServer
 function! Hexo_Server()

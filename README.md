@@ -1,4 +1,4 @@
-## Hexo for vim
+## Hexo for vim plugin
 
 ### Install
 - Use Vundle, Add this to your .vimrc  `Plugin 'hiphopcoders/hexo.vim`
@@ -8,25 +8,25 @@ You neet to set Hexo Blog path:
 - let g:hexoProjectPath="You hexo blog path"
 
 and then you can use commands to hexo blog:
-- HexoNewPost
+- `HexoNewPost`  
   Create a new post
 
-- HexoNewDraft
+- `HexoNewDraft`  
   Create a new draft
 
-- HexoPublish           
+- `HexoPublish`           
   Publish a draft post
 
-- HexoClean             
+- `HexoClean`             
   Clean the cache file and generated file
 
-- HexoGenerate         
+- `HexoGenerate`         
   Generate static file 
 
-- HexoDeploy            
+- `HexoDeploy`            
   CGenerat static file and deploy 
 
-- HexoServer
+- `HexoServer`
   Start hexo server
 
 

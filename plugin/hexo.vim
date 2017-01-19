@@ -62,7 +62,7 @@ endfunction
 function! Hexo_Publish(...)
     call OpenHexoProject()
     let filename = a:1
-    execute "!hexo p" . filename
+    execute "!hexo p " . filename
 endfunction
 
 

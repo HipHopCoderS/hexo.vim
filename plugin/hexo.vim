@@ -84,10 +84,10 @@ function! Hexo_Server()
 endfunction
 
 
-command -nargs=+ HexoNewPost :call Hexo_New_Post("<args>")
-command -nargs=+ HexoNewDraft :call Hexo_New_Draft("<args>")
-command -nargs=+ HexoPublish :call Hexo_Publish("<args>")
-command HexoClean :call Hexo_Clean()
-command HexoGenerate :call Hexo_Generate()
-command HexoDeploy  :call Hexo_Deploy()
-command HexoServer  :call Hexo_Server()
+command! -nargs=+ HexoNewPost :call Hexo_New_Post("<args>")
+command! -nargs=+ HexoNewDraft :call Hexo_New_Draft("<args>")
+command! -nargs=+ HexoPublish :call Hexo_Publish("<args>")
+command! HexoClean :call Hexo_Clean()
+command! HexoGenerate :call Hexo_Generate()
+command! HexoDeploy  :call Hexo_Deploy()
+command! HexoServer  :call Hexo_Server()
